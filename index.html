@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maaz's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #e74c3c;
+    }
+    .section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .section h2 {
+      color: #2c3e50;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .section p, .section ul {
+      line-height: 1.6;
+    }
+    .section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    #contact-form {
+      display: none;
+      margin-top: 15px;
+    }
+    #contact-form input, #contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    #contact-form button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #contact-form button:hover {
+      background-color: #34495e;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #2c3e50;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Maaz's Portfolio</h1>
+    <p>Computer Science Student & Cloud DevOps Enthusiast</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <div id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hi! I’m Maaz, a 22-year-old Computer Science student with a keen interest in Cloud DevOps. I’m passionate about learning how to manage and optimize cloud infrastructure, automate deployments, and solve real-world tech challenges. Currently, I’m honing my skills through hands-on projects and exploring the latest tools in the field.</p>
+  </div>
+
+  <!-- Skills Section -->
+  <div id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming (HTML, CSS, JavaScript)</li>
+      <li>Linux Command Line</li>
+      <li>Cloud Computing Basics</li>
+      <li>DevOps Tools (e.g., Docker, basic CI/CD)</li>
+      <li>Problem-Solving & Automation</li>
+    </ul>
+  </div>
+
+  <!-- Projects Section -->
+  <div id="projects" class="section">
+    <h2>Projects</h2>
+    <p><strong>Personal Portfolio</strong>: This website, built to showcase my journey in Computer Science and Cloud DevOps.</p>
+    <p><strong>Cloud Setup Experiment</strong>: A small project to configure a virtual server using open-source tools, exploring deployment workflows.</p>
+    <p>More projects in progress as I dive deeper into cloud technologies!</p>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Let’s connect regarding Cloud DevOps or collaboration opportunities!</p>
+    <button onclick="toggleForm()">Show Contact Form</button>
+    <div id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button onclick="submitForm()">Send Message</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Maaz. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleForm() {
+      const form = document.getElementById('contact-form');
+      form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function submitForm() {
+      alert('Thank you for your message! This is a demo; no data is sent.');
+      document.getElementById('contact-form').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
